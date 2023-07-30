@@ -27,11 +27,12 @@ function userDetails(firstname,lastname){
 }
 
 let u1 = userDetails("Sharvari","Hupare")
+
 // console.log(u1)
 // u1.sayFullName()
  
 
-
+//Constructor Function
 function Cars(name,model,wheels){
     this.name = name
     this.model = model
@@ -39,4 +40,36 @@ function Cars(name,model,wheels){
 }
 
 let c1 = new Cars('Tesla','3',4)
-console.log(c1)
+
+console.log(c1.constructor)
+
+
+
+function circlefun(radius){
+    let obj = {}
+    obj.radius = radius
+    obj.printarea = function(){
+        console.log(`Area of circle is: ${3.14*obj.radius*obj.radius}`)
+    }
+    return obj
+}
+
+// let cir1 = circlefun(3)
+
+// console.log(cir1)
+// cir1.printarea()/
+
+function Circlefun(radius){
+
+    this.radius = radius
+    this.printarea = function(){
+        console.log(`Area of circle is: ${3.14*this.radius*this.radius}`)
+    }
+    
+}
+
+let circl1 = new Circlefun(3)
+let circl2 = new Circlefun(4)
+let circl3 = new Circlefun(5)
+// console.log(circl1)
+// circl1.printarea()
