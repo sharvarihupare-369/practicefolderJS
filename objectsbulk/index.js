@@ -12,6 +12,8 @@ function createAccount(name,type,accBalance){
 }
 
 let acc1 = createAccount("Sharvari","savings",1000)
+let acc2 = createAccount("Vivek","savings",2000)
+let acc3 = createAccount("Namisha","savings",3000)
 // console.log(acc1)
 // acc1.printdetails()
 
