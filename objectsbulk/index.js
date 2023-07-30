@@ -27,6 +27,16 @@ function userDetails(firstname,lastname){
 }
 
 let u1 = userDetails("Sharvari","Hupare")
-console.log(u1)
-u1.sayFullName()
+// console.log(u1)
+// u1.sayFullName()
  
+
+
+function Cars(name,model,wheels){
+    this.name = name
+    this.model = model
+    this.wheels = wheels
+}
+
+let c1 = new Cars('Tesla','3',4)
+console.log(c1)
