@@ -1,11 +1,11 @@
 //forEach    ==> does not return anything it returns undefined
-//map
-//filter
-//sort      ==> mutates original array
-//find
-//findIndex
-//every
-//some
+//map       ==> returns same size array
+//filter    ==> returns same size or smaller size
+//sort      ==> mutates original array // returns same size of array
+//find      ==>  returns individual element
+//findIndex  ==> returns index of that element
+//every      ==> returns true or false
+//some       ==> returns true or false
 //reduce
 
 // let colors = ["Aqua","Brown","Black","Gold","Green","Purple","Blue","Red"]
