@@ -267,39 +267,107 @@ let words = [
   console.log(notVowel)
   
   // - Create a new array that contianse words not ending with vowel
+  let notVowelEnd = words.reduce((acc,curr)=>{
+    if(!curr.endsWith("a") && !curr.endsWith("e") && !curr.endsWith("o") && !curr.endsWith("u") && !curr.endsWith("i")){
+        acc.push(curr)
+    }
+    return acc
+  },[])
+  console.log(notVowelEnd)
   
  
   
-//   let numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+  let numbers1 = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
   
   // - Create a sumArray function that takes an array of number as a parameter, and calculate the sum of all its numbers
   
+  function sumArray(arr){
+   
+    let sumNum = numbers1.reduce((acc,curr)=>{
+        acc += curr
+        return acc;
+      },0) 
+    
+      console.log(sumNum)
+  }
+
+  sumArray(numbers1)
   
-  // - Make a new array that contains number multiplied by 3 like [6, 18, 27 ...]
-  
+
+//   - Make a new array that contains number multiplied by 3 like [6, 18, 27 ...]
+// let multipliedBy3 = numbers1.map((el)=>{
+//     return el * 3
+// })
+// console.log(multipliedBy3)
+
+  let multipliedByThree = numbers1.reduce((acc,curr)=>{     
+       acc.push(curr*3)
+       return acc
+  },[])
+
+  console.log(multipliedByThree)
   
   // - Create a new array that contains only even numbers
-  
+
+  let evenArray = numbers1.reduce((acc,curr)=>{
+       if(curr%2==0){
+           acc.push(curr)
+       }
+       return acc
+  },[])
+  console.log(evenArray)  
   
   // - Create  a new array that contains only odd numbers.
+
+    let oddArray = numbers1.reduce((acc,curr)=>{
+        if(curr%2!=0){
+            acc.push(curr)
+        }
+        return acc
+    },[])
+    console.log(oddArray)
+
   
   // - Create a new array that should have true for even number and false for odd numbers.
-  
-  
+    let evenOddArray = numbers1.reduce((acc,curr)=>{
+        if(curr%2==0){
+            acc.push(true)
+        }else{
+            acc.push(false)
+        }
+        return acc
+    },[])
+    console.log(evenOddArray)  
   // - Sort the above number in assending order.
+  let sortedArrayAsc = [...numbers1].sort((a,b)=>a-b)
+  console.log(sortedArrayAsc)
 
   
   // - Does sort mutate the original array?
-  
-  //yes it mutate the original array
+//   yes it mutates array
   
   // - Find the sum of the numbers in the array.
-  
+  let sumNum = numbers1.reduce((acc,curr)=>{
+    acc += curr
+    return acc;
+  },0) 
+
+  console.log(sumNum)
   
   
   //- Write a function averageNumbers that receives an array of numbers and calculate the average of the numbers
+   
+  function averageNumbers(arr){
+    let sum = numbers1.reduce((acc,curr)=>{
+        acc += curr
+        return acc;
+      },0) 
+    
+     return (Math.floor(sum/arr.length))
+  }
   
-  
+  console.log("The average of numbers is ", averageNumbers(numbers1))
+
   
   let strings2 = [
     "seat",
@@ -315,3 +383,21 @@ let words = [
   ];
   
   // - Write a function averageWordLength that receives an array of words2 and calculate the average length of the words.
+    
+  function averageWordLength(array){
+    //    let lenArray = array.reduce((acc,curr)=>{
+    //     acc.push(curr.length)
+    //     return acc
+    //    },[])
+
+    //    return (lenArray)
+
+    let lenArray = array.map((el)=>{
+        return el.length
+    })
+
+    return lenArray
+
+
+  }
+  console.log(averageNumbers(strings2))
