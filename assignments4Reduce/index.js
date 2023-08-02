@@ -77,17 +77,18 @@
 
 
    let flatArray1 = dataTwo.reduce((acc,curr)=>{
-      return acc.concat()
+      return acc.concat((Array.isArray(curr) ? flatArrayFun(curr) : curr))
    },[])
 
+   console.log(flatArray1)
+
+   function flatArrayFun(arr){
+       return arr.reduce((acc,curr)=>{
+          return acc.concat((Array.isArray(curr) ? flatArrayFun(curr) : curr))
+       },[])
+   }
 
 
-
-
-
-
-
-  
 
 // let flattenArr2 = dataTwo.reduce((acc, curr) => {
 //     return acc.concat(Array.isArray(curr) ? flattenArrCurr(curr) : curr);
