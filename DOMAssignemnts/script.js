@@ -5,7 +5,7 @@ document.title = "Hello AltCampus!"
 // 2. Select the element using the children property:
 
 //    - Select the `h1` element and change the value to `Learning DOM`
-      let h1 = document.body.children[0] = "Learmimg DOM"
+     let h1 = document.body.children[0] = "Learmimg DOM"
 
 
 //    - Select the first `li` element inside the `ul` with class `topics` and change the innerText to `all about document`
@@ -17,7 +17,9 @@ document.title = "Hello AltCampus!"
    
 
 // 3. Log the number (using console.log) of children of all the `li` element inside the ul with class `topics`
-    //  let licount = document.querySelectorAll("li")
+     let licount = document.querySelectorAll("li")
+     console.log(licount.length)
+
 
 
 
@@ -35,10 +37,10 @@ document.title = "Hello AltCampus!"
  let inputCheckbox = document.getElementById("remember")
 
 // 8. Select the input of type password using Attribute selectors. (eg: input[type="text"]) and store in `password`
- let password = document.querySelector([type="text"])
+ let password = document.querySelector('input[type="password"]')
 
 // 9. Select the input using the placeholder attribute selector with value `password` and store in `attrPassword`
-
+let attrPassword = document.querySelector('input[placeholder="password"]')
 
 
 // 10. Select all the `li` element and store in `allTopics`
@@ -58,31 +60,22 @@ let listOfSelectedTopics = document.querySelectorAll(".list")
 
 
 // 14. Select the first li element inside the `ul` element using `>` (direct child) and store in `firstLi`
-
+let firstLi = document.querySelector(".topics>li")
 
 // 15. Select all the img element and log the number of element saying `The total number of img element is ---`
 let imgEl = document.querySelectorAll("img")
-let count = 0;
-imgEl.forEach((el)=>{
-    count = count +  el;
-})
-console.log("imgCount",count)
+console.log(imgEl.length)
 
 // 16. Select all the `p` element and store in `allPElement`
 let allPElement = document.querySelectorAll("p")
 
 // 17. Select all the buttons and log the count of buttons.
 let allbuttons = document.querySelectorAll("button")
-console.log(allbuttons)
-let countButtons = 0;
-allbuttons.forEach((el)=>{
-    
-    count += el.length;
-})
-console.log("countButtons",countButtons)
+console.log("countButtons",allbuttons.length)
 
 // 18. Select all the `label` element and log the count.
 let allLabel = document.querySelectorAll("label")
+console.log("allLabel",allLabel.length)
 
 // 19. Select all the elements with `id` of `test`
 let idOftestEl = document.querySelectorAll("#test")
@@ -92,27 +85,30 @@ let idOftestEl = document.querySelectorAll("#test")
 let firstTest = document.getElementById("test")
 
 // 21. Select the parent element of the element stored in `topics` variable (#5) and log the element.
-
+console.log(topics.parentElement)
 
 
 // 22. Select the next element sibling of the element stored in `topics` variable (#5) and log the element.
-
+console.log(topics.nextElementSibling)
 
 
 // 23. Select the previous element sibling of the element stored in `topics` variable (#5) and change the `innerText` property to `Learning About Walking the DOM`.
-
+console.log(topics.previousElementSibling)
 
 
 // 24. Select the first element child of the element stored in `topics` variable (#5) and change the `innerText` property of the element to `This is the first child element`.
-
+console.log(topics.firstElementChild)
 
 
 // 25. Select the last element child of the element stored in `topics` variable (#5) and log the `typeof` the element.
-
+console.log(topics.lastElementChild)
 
 
 // 26. Select the element with type `fieldset` and store in a variable named `fieldsetElm`.
-
+let fieldsetElm = document.querySelector("fieldset")
 
 
 // 27. Select the parent element of the element stored in `fieldsetElm` variable (#5) and log the `typeof` the element.
+let fieldsetElmParent = fieldsetElm.parentElement
+console.log(fieldsetElmParent)
+console.log(typeof fieldsetElmParent)
