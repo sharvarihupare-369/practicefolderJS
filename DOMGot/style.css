@@ -57,7 +57,7 @@
   .card {
     display: inline-block;
     align-items: center;
-    text-align: start;
+    text-align: center;
   }
   img {
     border-radius: 50%;

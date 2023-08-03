@@ -33,7 +33,13 @@ createInputElm("Your age","number")
   
   // Your code goes here
   
-  
+  function createInputElme(label,type="text"){
+    let htmltype = `<label>${label}: <input type=${type} /></label>`
+}
+
+createInputElme("Your name")
+
+createInputElme("Your age","number")
   
   // TEST
   //<label>Your name: <input type="text"></label>
@@ -44,7 +50,13 @@ createInputElm("Your age","number")
   // Your code goes here
   
   // TEST
-  
+    function createList(arr=[]){
+       let ul = document.createElement("ul")
+       ul.innerHTML = arr.map((el)=> "<li>"+ el +  "</li>").join("")
+       document.body.append(ul)
+    }
+
+   createList(['Mango',"Apple","Banana"])
 
     // let ul = document.createElement("ul");
   
@@ -69,12 +81,12 @@ createInputElm("Your age","number")
   
   
   // TEST
-  createTodoList([
-    { name: "Learn DOM", isDone: false },
-    { name: "Learn JS", isDone: true },
-  ]);
-  createTodoList([
-    { name: "Learn DOM", isDone: false },
-    { name: "Learn React", isDone: true },
-    { name: "Learn JS", isDone: true },
-  ]);
+  // createTodoList([
+  //   { name: "Learn DOM", isDone: false },
+  //   { name: "Learn JS", isDone: true },
+  // ]);
+  // createTodoList([
+  //   { name: "Learn DOM", isDone: false },
+  //   { name: "Learn React", isDone: true },
+  //   { name: "Learn JS", isDone: true },
+  // ]);
