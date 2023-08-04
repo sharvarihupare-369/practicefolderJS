@@ -44,7 +44,7 @@ function createGrid(){
 let smallboxes = createGrid()
 console.log(smallboxes)
 
-containerEl.addEventListener("mousemove",()=>{
+containerEl.addEventListener("click",()=>{
     for(let i=0; i<smallboxes.length; i++){
         smallboxes[i].style.backgroundColor = generateHexColors()
         smallboxes[i].textContent = getRandomNumber(500)
