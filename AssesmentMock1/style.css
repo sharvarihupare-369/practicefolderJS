@@ -1,0 +1,56 @@
+h1{
+    text-align: center;
+}
+
+#container{
+    width: 45%;
+    margin: auto;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#text{
+    padding: 8px 20px;
+}
+
+#addbtn{
+    padding: 0 20px;
+}
+
+#container > div{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.edit{
+    background-color:teal;
+    padding:8px 16px;
+    color: white;
+}
+
+.deletebtn{
+    background-color:red;
+    color: white;
+    padding:8px 16px
+}
+
+#searchForm{
+    display: flex;
+    width: 60%;   
+    justify-content: center;
+    margin:10px auto;
+    gap:10px;
+}
+
+#search{
+    width: 40%;
+    padding: 10px;
+   
+}
