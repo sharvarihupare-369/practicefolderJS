@@ -34,3 +34,23 @@ svg text {
 }
 
 /* .wrapper {background-color: #FFFFFF}; */
+
+.container{
+    width: 60%;
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(223, 221, 221);
+}
+
+.container a {
+    cursor: pointer;
+}
+
+.container img{
+    width: 50px;
+    border-radius: 50%;
+}
