@@ -1,6 +1,6 @@
 {
-    "name" : "VS Code Cheatsheet",
-    "description" : "VS Code Cheatsheet",
+    "name" : "MyTab",
+    "description" : "MyTab",
     "version" : "1.0.0",
     "manifest_version" : 2,
     "chrome_url_overrides":{
