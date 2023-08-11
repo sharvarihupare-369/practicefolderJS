@@ -254,6 +254,7 @@ let words = [
   
   
   // - Find the index of the word "rhythm"
+//   console.log(words.indexOf("rhythm"))/
   console.log(words.indexOf("rhythm"))
   
   
